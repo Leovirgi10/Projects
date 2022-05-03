@@ -1,16 +1,81 @@
+<!--
+La pagina dovrà contenere l'articolo e un footer con un form di sottoscrizione al blog.
+- L'articolo si compone di titolo, testo e immagini in fondo.
+- Il form dovrà comporsi di un campo obbligatorio per l'inserimento della mail e un pulsante di invio.
+- Usa quanto più possibile i tag semantici.
+Alcuni dei tag semantici che puoi utilizzare sono < h1 >, < main >, < article >, < footer >   -->
 
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercizi-Html</title>
+    <title>Blog Develop</title>
 </head>
-<h1> Questo è il mio primo esercizio Html...</h1>
-
 
 <body>
+    <Header>
+        <h1>Ariticolo Blog Develop.</h1>
+    </Header>
+    
+    <main>
+        <article>
+            <section>
+                <h2>Primo Paragrafo del Blog</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                   At cumque, doloremque voluptatem obcaecati eius, placeat atque architecto officia, <br>
+                   perspiciatis omnis ut dignissimos repellat itaque ea perferendis quisquam facilis nostrum distinctio?</p>
+            </section>
+        
+            <section>
+                <h2>Secondo Paragrafo del Blog</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                   At cumque, doloremque voluptatem obcaecati eius, placeat atque architecto officia, <br>
+                   perspiciatis omnis ut dignissimos repellat itaque ea perferendis quisquam facilis nostrum distinctio?</p>
+            </section>
+        
+            <section>
+                <h2>Terzo Paragrafo del Blog</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                   At cumque, doloremque voluptatem obcaecati eius, placeat atque architecto officia, <br>
+                   perspiciatis omnis ut dignissimos repellat itaque ea perferendis quisquam facilis nostrum distinctio?</p>
+            </section>
+        
 
+            <section>
+                <h2>Quarto Paragrafo del Blog</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                   At cumque, doloremque voluptatem obcaecati eius, placeat atque architecto officia, <br>
+                   perspiciatis omnis ut dignissimos repellat itaque ea perferendis quisquam facilis nostrum distinctio?</p>
+            </section>
+        
+        </article>
+    
+        <figure>
+
+            <img src="hands.png" alt="Immagine di una developer a lavoro">
+            <img src="laptop.png" alt="Immagine di un laptop">
+
+        </figure>
+
+    </main>
+
+    
+    <footer>
+        
+        <fieldset> 
+            <legend>Iscriviti alla Newsletter</legend>
+            
+            <form action="iscrizione"> 
+                <label for="email">Inserisci la tua email:</label>
+                <input type="email" id="email" name="usermail" required>               
+                <input type="submit" name="Invia">
+            </form>
+                       
+        </fieldset>
+            
+    </footer>
     
 </body>
 </html>
