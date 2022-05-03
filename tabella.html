@@ -1,0 +1,129 @@
+<!--Creare una tabella composta da 3 colonne rappresentanti le entrate e uscite mensili di un utente, e un titolo.
+La prima colonna contiene i nomi dei mesi
+La seconda colonna le entrate
+La terza colonna le uscite
+La prima riga dovrà avere l'header della tabella
+L'ultima riga deve contenere le somme dei valori
+All'interno del tag table, crea tre blocchi per l'intestazione, per il corpo e per il footer della tabella, 
+attraverso rispettivamente i tag < thead >, < tbody >, < tfoot > -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella</title>
+</head>
+
+<!-- Non ho utilizzato css per creare una struttura migliore della tabelle, solo html-->
+<body>
+    <table>
+        <caption>Resoconto annuale - Trading</caption>
+        <colgroup>
+            <col style="background-color: yellow;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Mesi</th>
+                <th>Entrate</th>
+                <th>Uscite</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Gennaio</td>
+                <td>20$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Febbraio</td>
+                <td>20$</td>
+                <td>-10$</td>
+            </tr>
+
+            <tr>
+                <td>Marzo</td>
+                <td>110$</td>
+                <td>-50$</td>
+            </tr>
+
+            <tr>
+                <td>Aprile</td>
+                <td>200$</td>
+                <td>-5$</td>
+            </tr>
+
+            <tr>
+                <td>Maggio</td>
+                <td>50$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Giugno</td>
+                <td>30$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Luglio</td>
+                <td>180$</td>
+                <td>-30$</td>
+            </tr>
+
+            <tr>
+                <td>Agosto</td>
+                <td>100$</td>
+                <td>-10$</td>
+            </tr>
+
+            <tr>
+                <td>Settembre</td>
+                <td>200$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Ottobre</td>
+                <td>80$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Novembre</td>
+                <td>0$</td>
+                <td>0$</td>
+            </tr>
+
+            <tr>
+                <td>Dicembre</td>
+                <td>150$</td>
+                <td>-50$</td>
+            </tr>
+
+ 
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <td>Totale</td>
+                <td>1.068$</td>
+                <td>155$</td>
+            </tr>
+ 
+            <tr>
+                <td colspan="2">Incasso annuo</td>
+                <td>913$</td>
+            </tr>
+
+        </tfoot>
+
+
+    </table>
+    
+</body>
+</html>
