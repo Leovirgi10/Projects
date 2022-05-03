@@ -1,0 +1,30 @@
+<!--
+    Converti le immagini di questa pagina per supportare un formato di fallback in caso webp non sia supportato.
+    Prova ad usare i tag < picture >, < source > e < img > -->
+
+
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversione/img</title>
+    </head>
+
+    <body>
+
+        <picture>
+            <source media="(min-width:650px)" srcset="business-man.webp">
+            <source media="(min-width:465px)" srcset="business-man.webp">
+            <img src="business-man.jpg" alt="Un immagine di un uomo d'affari.">
+        </picture>
+
+        <picture>
+            <source media="(min-width:650px)" srcset="ok-hand.webp">
+            <source media="(min-width:465px)" srcset="ok-hand.webp">
+            <img src="ok-hand.jpg" alt="Cenno di ok con la mano">
+        </picture>
+         
+    </body>
+    </html>
