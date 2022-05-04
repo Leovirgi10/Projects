@@ -1,24 +1,6 @@
-<!--Il form deve contenere i seguenti campi:
-    Email -- 
-    Password -- 
-    Nome e Cognome -- 
-    Data di nascita -- 
-    Numero di telefono --
-
-    Selettore con scelta di un piano di abbonamento.
-    Un piano free
-    Un gruppo di massimo 3 piani con prezzo crescente
-
-    Un campo per scegliere se aggiungere o meno i vantaggi PRO
-    Campi per inserimento carta di scredito
-    Numero carta
-    CVC
-    Scadenza
-    Indirizzo di fatturazione
-    Per il selettore con scelta di un piano di abbonamento, ricorda che devi usare un tag < select >, 
-    con i tag < option > all'interno, per gestire un gruppo, invece, esiste il tag < optgroup >-->
-
-
+<!--"I valori massimi e minimi per la data di scadenza sono sbagliati, è errato in generale mettere 
+  un limite minimo che non sia alla data di oggi e un limite massimo.
+  -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -111,7 +93,7 @@
                 <input type="text" id="cod-sicurezza" name="cod-sicurezza" required>
 
                 <label for="scadenza">Data di scadenza</label>
-                <input type="date" id="scadenza" name="scadenza" min="2018-01-01" max="2025-12-31">>
+                <input type="date" id="scadenza" name="scadenza" min="2022-05-04">
 
                 <br>
                 <label for="indirizzo">Indirizzo di Fatturazione:</label>
@@ -119,15 +101,15 @@
 
             </fieldset>
 
-            <!--Submits-->
-            <footer>
-              <input type="submit" value="invia">
-            </footer>
- 
 
         </form>
-    </main>
+      </main>
 
-    
+      <!--Submits-->
+      <footer>
+        <form action="subtmit"></form>
+        <input type="submit" value="invia">
+      </footer>
+
 </body>
 </html>
