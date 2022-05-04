@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ù, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul> <!--lista annidata-->
+                <li><strong>Navbar</strong></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Dropdown</a> <!--Inserimento di un possibile 'caret down', per visualizzare le altre pagine con menu a tendina-->
+                    <ul>
+                        <li>Pagina 1</li>
+                        <li>Pagina 2</li>
+                        <li>Pagina 3</li>
+                    </ul>
+                </li>
+                <li><a href="#">Disabled</a></li>
+                <li> 
+                    <form>  <!-- Form di ricerca all'interno del sito-->
+                        <label for="ricerca"></label>
+                        <input type="search" id="ricerca" name="ricerca" placeholder="Ricerca sul sito...">
+
+                        <label for="invia"></label>
+                        <input type="submit" id="invia" name="invia" value="invia" >
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+</body>
+</html>
