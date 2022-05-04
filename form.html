@@ -1,0 +1,133 @@
+<!--Il form deve contenere i seguenti campi:
+    Email -- 
+    Password -- 
+    Nome e Cognome -- 
+    Data di nascita -- 
+    Numero di telefono --
+
+    Selettore con scelta di un piano di abbonamento.
+    Un piano free
+    Un gruppo di massimo 3 piani con prezzo crescente
+
+    Un campo per scegliere se aggiungere o meno i vantaggi PRO
+    Campi per inserimento carta di scredito
+    Numero carta
+    CVC
+    Scadenza
+    Indirizzo di fatturazione
+    Per il selettore con scelta di un piano di abbonamento, ricorda che devi usare un tag < select >, 
+    con i tag < option > all'interno, per gestire un gruppo, invece, esiste il tag < optgroup >-->
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+      <header>
+          <h1>Abbonamento Premium - Sport</h1>
+      </header>
+
+    <main>
+        <!--Da specificare il tipo di method Get/post-->
+        <form action="abbonamento" method="">
+           <!--Dati personali-->
+            <fieldset>
+                <legend>Dati personali</legend>     
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" id="cognome" name="cognome" required><br> 
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required><br> 
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br> 
+
+                    <label for="telefono">Tel:</label>
+                    <input type="tel" id="telefono" name="telefono" required ><br> 
+
+                    
+                    <label for="nascita">Data di nascita:</label>
+                    <input type="date" id="nascita" name="nascita"  value="2022-01-01" min="1990-01-01" max="2022-12-31"><br> 
+
+            </fieldset>
+            
+
+            <!--Tipologia di abbonamento-->
+            <fieldset>
+                <legend>Piano di abbonamento</legend>
+                
+                    <label for="abbonamento">Tipologia di abbonamento:</label>
+                    <select id="abbonamento" name="abbonamento">
+
+                      <optgroup label="Free">
+                        <option value="gratuito">Gratuito</option>
+                      </optgroup>
+
+                      <optgroup label="Premium">
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="55">55</option>
+                      </optgroup>
+
+                    </select>
+
+                    <br>
+                    <span>Vuoi aggiungere ulteriori vantaggi con solo 1$?</span>
+                    <label for="vantaggi">Si</label>
+                    <input type="radio" id="si" name="si"checked>
+
+                    <label for="vantaggi">no</label>
+                    <input type="radio" id="no" name="no">
+
+            </fieldset>
+            
+          
+            <!--Dati Carta di credito-->
+            <fieldset>
+                <legend>Dati intestatario</legend>
+                <label for="carta">Tipologia Carta:</label>
+                <select name="carta" id="carta">
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">visa</option>
+                    <option value="americanexprss">American express</option>  
+                </select>
+                 
+                <br>
+                <label for="numero-carta">Numero Carta:</label>
+                <input type="text" id="numero-carta" name="numero-carta" required> 
+                
+                <label for="cod-sicurezza">Cvv:</label>
+                <input type="text" id="cod-sicurezza" name="cod-sicurezza" required>
+
+                <label for="scadenza">Data di scadenza</label>
+                <input type="date" id="scadenza" name="scadenza" min="2018-01-01" max="2025-12-31">>
+
+                <br>
+                <label for="indirizzo">Indirizzo di Fatturazione:</label>
+                <input type="text" id="indirizzo" name="indirizzo" required>
+
+            </fieldset>
+
+            <!--Submits-->
+            <footer>
+              <input type="submit" value="invia">
+            </footer>
+ 
+
+        </form>
+    </main>
+
+    
+</body>
+</html>
