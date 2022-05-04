@@ -1,0 +1,76 @@
+<!--Aggiungi alla pagina:
+
+- Un pulsante disabilitato
+- Un input numerico, con relativa label, nel range 0-100 e con step di 2 --- fatto
+- Una checkbox con relativa label ----fatto
+- Un input di tipo date . ..fatto
+
+La checkbox deve essere già selezionata all'apertura della pagina.
+Per gestire l'autofocus all'apertura della pagina, utilizza l'attributo autofocus -->
+
+
+<!Doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributi</title>
+</head>
+<body>
+
+    <header>
+          <h1>Invia un Feedback</h1>
+    </header>
+
+    <main>     
+          
+        <!-- Ho creato una pagina con l'invio di un feedback-->
+        <fieldset>
+            <legend>Il tuo cibo preferito:</legend>
+            
+            <!--Checkbox con un input gia selezionato(checked)-->
+            <form action="cibo-preferito"> 
+                <div> 
+                    <label for="pizza">Pizza</label>
+                    <input type="checkbox" id="pizza" name="pizza" value="pizza" checked>
+                    
+                    <label for="pasta">Pasta</label>
+                    <input type="checkbox" id="pasta" name="pasta" value="pasta">
+                
+                    <label for="verdura">Verdura</label>
+                    <input type="checkbox" id="verdura" name="verdura" value="verdura">
+                </div>
+        
+
+                <!--input numerico con autofocus-->
+                <div>
+                    <label for="voto">Vota da 1 a 100 il tuo pasto:</label>
+                    <input type="number" id="voto" name="voto" min="o" max="100" step="2" autofocus>
+                </div>
+
+                <!--input data-->
+                <div> 
+                    <label for="date"> Data:</label>
+                    <input type="date" id="date" name="date" value="2022-05-04"  min="2020-01-01" max="2022-12-31">
+                </div>
+                
+
+                <!--bottone disabilitato-->
+                <div>
+                    <label for=""></label>
+                    <input type="checkbox" name="disabilitato"  value="disabilitato" disabled="disabled"/>
+                </div>
+
+            </form>
+
+        </fieldset>
+               
+            
+    </main>
+
+
+
+
+</body>
+</html>
