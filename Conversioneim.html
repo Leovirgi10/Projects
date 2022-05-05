@@ -1,5 +1,4 @@
-<!--
-    Converti le immagini di questa pagina per supportare un formato di fallback in caso webp non sia supportato.
+<!--Converti le immagini di questa pagina per supportare un formato di fallback in caso webp non sia supportato.
     Prova ad usare i tag < picture >, < source > e < img > -->
 
 
@@ -15,14 +14,14 @@
     <body>
 
         <picture>
-            <source media="(min-width:650px)" srcset="business-man.webp">
-            <source media="(min-width:465px)" srcset="business-man.webp">
+            <source media="(max-width:720px)" srcset="business-man.webp">
+            <source media="(min-width:800px)" srcset="business-man.webp">
             <img src="business-man.jpg" alt="Un immagine di un uomo d'affari.">
         </picture>
 
         <picture>
-            <source media="(min-width:650px)" srcset="ok-hand.webp">
-            <source media="(min-width:465px)" srcset="ok-hand.webp">
+            <source media="(max-width:720px)" srcset="ok-hand.webp">
+            <source media="(min-width:800px)" srcset="ok-hand.webp">
             <img src="ok-hand.jpg" alt="Cenno di ok con la mano">
         </picture>
          
