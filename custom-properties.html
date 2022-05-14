@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+
+    <style>
+        /* ho utilizzato le custom properties con le opportune variabili */
+        :root {
+            --body-bg-color:white;
+            --ball-bg-color:blue; 
+            --ball-width: 120px;
+            --ball-height: 80px;
+            --ball-border-rad: 80px;
+          }
+
+        body {
+            background-color: var(--body-bg-color, orange);  /*orange come valore di fallback */
+        }
+
+        .ball {
+            width: var(--ball-width);
+            height: var(--ball-height);
+            background-color: var(--ball-bg-color, pink);  /*pink come valore di fallback */
+            border-radius: var(--ball-border-rad);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="ball">
+
+    </div>
+
+
+</body>
+
+</html>
